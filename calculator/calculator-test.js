@@ -21,13 +21,3 @@ describe('check the number of decimal places', () => {
     expect(monthly.length - 1 - monthly.indexOf('.')).toEqual(2);
   });
 })
-
-
-/// etc
-
-
-// return {
-//   amount: +(document.getElementById("loan-amount").value),
-//   years: +(document.getElementById("loan-years").value),
-//   rate: +(document.getElementById("loan-rate").value)
-// }
