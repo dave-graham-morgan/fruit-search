@@ -58,7 +58,6 @@ function calculateMonthlyPayment(values) {
   }else if(stringed.indexOf('.') === stringed.length-2){
     stringed = stringed + "0";
   }
-
   return stringed;
   
 }

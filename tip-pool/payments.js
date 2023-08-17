@@ -35,7 +35,7 @@ function submitPaymentInfo(evt) {
 function createCurPayment() {
   let billAmt = billAmtInput.value;
   let tipAmt = tipAmtInput.value;
-
+  
   if (billAmt === '' || tipAmt === '') return;
 
   if (Number(billAmt) > 0 && Number(tipAmt) >= 0) {
@@ -75,4 +75,3 @@ function updateSummary() {
   summaryTds[1].innerHTML = '$' + sumPaymentTotal('tipAmt');
   summaryTds[2].innerHTML =  Math.round(tipPercentAvg) + '%';
 }
-

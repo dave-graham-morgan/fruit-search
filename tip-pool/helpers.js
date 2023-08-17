@@ -1,4 +1,3 @@
-
 // accepts 'tipAmt', 'billAmt', 'tipPercent' and sums total from allPayments objects
 function sumPaymentTotal(type) {
   let total = 0;
@@ -8,7 +7,7 @@ function sumPaymentTotal(type) {
 
     total += Number(payment[type]);
   }
-
+  
   return total;
 }
 
@@ -21,6 +20,5 @@ function calculateTipPercent(billAmt, tipAmt) {
 function appendTd(tr, value) {
   let newTd = document.createElement('td');
   newTd.innerText = value;
-
   tr.append(newTd);
 }
