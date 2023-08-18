@@ -33,7 +33,7 @@ describe("Servers test (with setup and tear-down)", function() {
     // teardown logic
     serverTbody.innerHTML = '';
     allServers = {};
-    serverId = 0;
+    serverId = 0; //this took me forever to figure out!
 
   });
 });
