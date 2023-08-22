@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh; /* Set the body height to the full viewport height */
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+  background-image: linear-gradient(to left, rgb(245, 126, 7), yellow);
+}
+
+.search-container {
+  position: absolute;
+  text-align: left; 
+  margin: 0;
+  background-color: brown;
+}
+
+.search-container input {
+ /* TODO */
+ /* background-image: linear-gradient(to right, rgb(245, 126, 7), yellow); */
+ background-color: rgb(247, 208, 109);
+ color: black;
+ text-shadow: 0 0 2px white; /* Add a slight white outline */
+ width: 250px;
+ height: 35px;
+ font-size: 25px;
+}
+.search-container input::placeholder {
+  /* TODO */
+   color: black;
+   text-shadow: 0 0 2px white; /* Add a slight white outline */
+ }
+
+.search-container .suggestions {
+   /* TODO */
+  position: absolute;
+  max-height: 200px; /* Set the maximum height for the list */
+  width: 100%;
+  overflow-y: scroll; /* Enable vertical scrolling when necessary */
+  list-style-type: none;
+  font-size: 25px;
+  margin:0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(247, 208, 109);
+}
+
+ul li {
+  position: relative;
+  margin:0;
+  padding:  2px;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  /* TODO */
+  background-color: rgb(210, 118, 38);
+  font-size: 26px;
+}
